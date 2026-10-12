@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de Material - Ricardo Barbosa Ribeiro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="cabecalho">
+    <h1>RICARDO BARBOSA RIBEIRO</h1>
+    <p>Lista de Material</p>
+</header>
+
+<main>
+
+    <section class="dados-obra">
+
+        <input
+            type="text"
+            id="cliente"
+            placeholder="Nome do cliente"
+        >
+
+        <input
+            type="text"
+            id="endereco"
+            placeholder="Endereço da obra"
+        >
+
+        <input
+            type="date"
+            id="data"
+        >
+
+    </section>
+
+
+    <section class="barra-pesquisa">
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar material..."
+        >
+
+        <button onclick="limparLista()">
+            Limpar lista
+        </button>
+
+    </section>
+
+
+    <section id="catalogo"></section>
+
+
+    <section class="lista-final">
+
+        <h2>Materiais selecionados</h2>
+
+        <div id="listaSelecionada">
+            <p>Nenhum material selecionado.</p>
+        </div>
+
+        <button
+            class="botao-pdf"
+            onclick="gerarPDF()"
+        >
+            GERAR PDF
+        </button>
+
+    </section>
+
+</main>
+
+
+<script src="materiais.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

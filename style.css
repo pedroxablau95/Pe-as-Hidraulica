@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+    color: #222;
+}
+
+.cabecalho {
+    background: #17324d;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.cabecalho p {
+    margin: 7px 0 0;
+}
+
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.dados-obra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 180px;
+    gap: 10px;
+    padding: 16px 12px 5px;
+}
+
+.dados-obra input,
+.barra-pesquisa input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+.barra-pesquisa {
+    display: flex;
+    gap: 10px;
+    padding: 10px 12px 16px;
+}
+
+.barra-pesquisa input {
+    flex: 1;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.categoria {
+    background: white;
+    margin: 10px 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+}
+
+.categoria h2 {
+    margin: 0;
+    padding: 14px;
+    background: #e9eef3;
+    font-size: 18px;
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-top: 1px solid #eee;
+}
+
+.nome {
+    flex: 1;
+}
+
+.unidade {
+    color: #666;
+    width: 70px;
+    font-size: 13px;
+}
+
+
+.controles {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.controles button {
+    width: 38px;
+    height: 36px;
+    padding: 0;
+    background: #17324d;
+    color: white;
+    font-size: 21px;
+}
+
+.quantidade {
+    min-width: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.lista-final {
+    background: white;
+    margin: 20px 12px 40px;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.lista-final h2 {
+    margin-top: 0;
+}
+
+
+.linha-material {
+    display: grid;
+    grid-template-columns: 70px 80px 1fr;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.botao-pdf {
+    width: 100%;
+    margin-top: 20px;
+    background: #17324d;
+    color: white;
+    font-size: 17px;
+}
+
+
+@media (max-width: 700px) {
+
+    .dados-obra {
+        grid-template-columns: 1fr;
+    }
+
+    .barra-pesquisa {
+        flex-direction: column;
+    }
+
+    .item {
+        padding: 9px;
+    }
+
+    .nome {
+        font-size: 14px;
+    }
+
+    .linha-material {
+        grid-template-columns: 55px 65px 1fr;
+    }
+
+    .cabecalho h1 {
+        font-size: 18px;
+    }
+
+}
